@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Diffuse:
-        m_Texture: {fileID: 8400000, guid: 99b9c46eed825284fb4572b358578b20, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normals:
@@ -28,8 +28,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Bands: 2
+    - _Bands: 1000
     - _Gloss: 0
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _node_8623: {r: 0.17248131, g: 0.17699064, b: 0.1792453, a: 1}
+    - _Color: {r: 0.75294125, g: 0.75294125, b: 0.75294125, a: 0}
+    - _node_8623: {r: 0.17248131, g: 0.17699064, b: 0.1792453, a: 0}
