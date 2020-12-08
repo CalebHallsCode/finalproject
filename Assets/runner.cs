@@ -24,7 +24,6 @@ public class runner : MonoBehaviour
     {
         distanceTraveled = transform.localPosition.x;
 
-        transform.Translate(6f * Time.deltaTime, 0f, 0f);
 
         if (touchingPlatform && Input.GetButtonDown("Jump"))
         {
@@ -32,6 +31,20 @@ public class runner : MonoBehaviour
 
         }
         distanceTraveled = transform.localPosition.x;
+
+
+        if (Input.GetMouseButton(0))
+        {
+            rb.useGravity = false;
+            transform.Translate(0f, 0f, 0f);
+
+        }
+        else
+        {
+            rb.useGravity = true;
+            transform.Translate(6f * Time.deltaTime, 0f, 0f);
+
+        }
 
     }
     void FixedUpdate()
@@ -50,6 +63,11 @@ public class runner : MonoBehaviour
     void OnCollisionExit()
     {
         touchingPlatform = false;
+    }
+
+
+    void PauseGame()
+    {
     }
 }
 
